@@ -1,0 +1,320 @@
+
+
+#header{
+  position:fixed;
+  height: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(3,10,20,0.7);
+  margin-top: -50px;
+  z-index: 1;
+}
+
+.items{
+  height: 100px;
+  width: 100vw;
+}
+#logo{
+  filter: blur(0);
+  height: 150px;
+  width: 150px;
+  background-color: transparent;
+  margin-left: 15px;
+}
+#github{
+  height: 40px;
+  width: 40px;
+  filter: blur(0);
+  margin-right: 25px;
+  margin-bottom: 15px;
+  
+}
+
+#barraMenu{
+  width: 70%;
+}
+
+#itensMenu{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+  padding-left: 0px;
+}
+
+
+.itemMenu{
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+#show{
+  position: fixed;
+  width: 700px;
+  height: 500px;
+  background-color: #051c38;
+  z-index: 10;
+  transform: translate(44%);
+  top: 10%;
+  display: none;
+}
+
+.itemMenu:hover{
+  color: gray;
+}
+
+
+  
+  #animalsBody{
+  margin: 0px;
+  background-color: #010109 ;
+  overflow-x: hidden;
+  }
+  
+  #animalSection{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  height: 550px;
+  background-image: url("https://images.unsplash.com/photo-1504006833117-8886a355efbf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom;
+  padding: 0px;
+  align-items: center;
+  width: 100%;
+  background-attachment: fixed;
+  margin-bottom: 30px;
+  }
+
+  #filtroSecao{
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: end;
+  }
+  
+  
+  #titulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-size: 52px;
+    width: 100%;
+    height: 70px;
+    align-content: center;
+    background-color: rgba(1, 1, 9,0.7);
+  }
+  #selectButton{
+    width: 100px;
+    height: 40px;
+    top: 93vh;
+    left: 500px;
+    position: relative;
+    transform: translate(50%);
+  }
+  #animalImageCollection{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .animalImage{
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+    background-color: grey;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .animalImage:hover .botoesAparecem{
+    opacity: 1;
+  }
+
+
+  
+  .botoesAparecem{
+    border-radius: 13px;
+    background-color: #031020 ;
+    color: white;
+    box-shadow: 3px 3px 10px black ;
+    border: 0px;
+  }
+  
+  
+  .figuras{
+    --transition: 0.5s;
+    width: inherit;
+    height: inherit;
+    --brightness: 1;
+    --grayscale: 0.8;
+    --blur: 1.1px;
+    transition: flex var(--transition),  filter var(--transition);
+    filter: grayscale(var(--grayscale)) brightness(var(--brightness)) blur(var(--blur));
+    object-fit: cover;
+    flex: 1;
+    opacity: 1;
+    cursor:pointer;
+  }
+  
+  .figuras:hover{
+   transform: scale(1.1);
+   --brightness: 1.15;
+   --grayscale: 0;
+   flex: var(--magnifier);
+   --left:40px;
+   --value: -1;
+   --blur: 0;
+  }
+
+  .figuras-hover{
+   transform: scale(1.1);
+   --brightness: 1.15;
+   --grayscale: 0;
+   flex: var(--magnifier);
+   --left:40px;
+   --value: -1;
+   --blur: 0
+  }
+
+  .botao-link{
+      text-decoration: none;
+  }
+  
+  .botoesAbrir{
+    position: absolute;
+    bottom:1%;
+    right: 40%;
+    opacity: 0;
+    width: 80px;
+    height: 30px;
+    cursor:pointer;
+  }
+
+  .botoesAbrir:hover{
+      border: 2px solid #010109;
+      background-color: #C9D5F0;
+      color: #031020;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #C9D5F0;
+    height: 10px;
+    border-radius: 5px;;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: #031020;
+  }
+
+  #divBotaoSeta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    
+  }
+  #botaoSeta{
+    
+    border: 0px;
+    border-radius: 3000px;
+    background-color: #051c38;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(17, 17, 17)
+    
+  }
+  #labelSeta{
+    color: beige;
+    margin-left: 0px;
+    margin-bottom: 6px;
+  }
+  #botaoSeta:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px beige;
+    cursor: pointer;
+  }
+  #footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-top: 30px ;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+  }
+
+  #itensFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 300px;
+    width: 100%;
+   
+  }
+
+  .itemFooter{
+    margin: 7px;
+  }
+
+  .titulosFooter{
+    color: darkgray;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .svgInsta{
+    margin-top: 0px;
+    margin-left: 14px;
+  }
+  .svgLinkedin{
+   
+    margin-left: 15px;
+  }
+  .svgGithub{
+   
+    margin-left: 15px;
+  }
+
+  .linkFooter{
+    text-decoration: none;
+    color: gray;
+  }
+  .linkFooter:hover{
+    color: blue;
+  }
+
+  .colunaRedesSociais{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #copy{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
